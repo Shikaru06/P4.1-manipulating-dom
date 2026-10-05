@@ -36,11 +36,7 @@ function renderCards(jsondata) {
     html += `
       <div class="col">
         <div class="card h-100">
-          <img
-            src="${char.thumbnail.path}.${char.thumbnail.extension}"
-            class="card-img-top"
-            alt="${char.name}"
-          >
+          <img src="${char.thumbnail.path}.${char.thumbnail.extension}" class="card-img-top" alt="${char.name}">
 
           <div class="card-body">
             <h5 class="card-title">${char.name}</h5>
@@ -54,7 +50,6 @@ function renderCards(jsondata) {
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapse${char.id}"
-                    aria-expanded="false"
                     aria-controls="collapse${char.id}"
                   >
                     Comics
